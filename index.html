@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacked By</title>
+  <style>
+    body {
+      background: url('https://cdn.discordapp.com/attachments/1380309637961875517/1450284171728654565/snaptik_7533656684212849953_v2_1_.gif?ex=6941f9e3&is=6940a863&hm=39a789c81abd5f9bb0b2078fb06060d5996953e9f6a793c7875d0686db43c9e6&') no-repeat center center fixed;
+      background-size: cover;
+      font-family: monospace;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: black;
+      font-size: 2.5em;
+      text-shadow: 0 0 8px black
+      , 0 0 15px red;
+    }
+
+    .info {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #240000;
+      text-shadow: 0 0 8px #240000, 0 0 15px #240000;
+      white-space: pre-wrap;
+    }
+
+    .warning {
+      color: red;
+      margin-top: 30px;
+      font-size: 1.8em;
+      text-shadow: 0 0 5px red;
+    }
+
+    img {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://cdn.discordapp.com/emojis/1291869918794616902.webp?size=80" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
+  <h1>Hacked By [ JHNM ]</h1>
+  <h1><b><p href="discord.gg/Ay1" style="color: orange; text-decoration: none;">Discord.gg/ayl</h1><h1></h1>
+  <h1 style="color: red;">JHNM fucked the server </h1>
+
+  <div class="info" id="ip-info">Loading IP info...</div>
+
+  <div class="warning">Oops, server is down !</div>
+
+</div>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1380309637961875517/1414935644848783402/Oppenheimer_2023_Soundtrack_-_Can_You_Hear_The_Music_Extended.mp3?ex=6941eb41&is=694099c1&hm=231461925b9cec5ff6399e0765b35012071d10e7e38f80ec05c7208509db7bd1&" type="audio/mpeg">
+        Your browser does not support the audio element.
+
+    }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://l.top4top.io/p_32131zd9t1.png" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1380309637961875517/1414935644848783402/Oppenheimer_2023_Soundtrack_-_Can_You_Hear_The_Music_Extended.mp3?ex=6941eb41&is=694099c1&hm=231461925b9cec5ff6399e0765b35012071d10e7e38f80ec05c7208509db7bd1&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+        <span><strong>City:</strong> <span id="city"></span></span><br>
+        <span><strong>Region:</strong> <span id="region"></span></span><br>
+        <span><strong>Country:</strong> <span id="country"></span></span><br>
+        <span><strong>Location:</strong> <span id="loc"></span></span><br>
+        <span><strong>Organization:</strong> <span id="org"></span></span><br>
+        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text">discord.gg/ay1</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
