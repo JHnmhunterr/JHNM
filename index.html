@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hacked By</title>
-  <style>
-    body {
-      background: url('https://cdn.discordapp.com/attachments/1380309637961875517/1450284171728654565/snaptik_7533656684212849953_v2_1_.gif?ex=6943f423&is=6942a2a3&hm=b0d8815213212f39cc9de75d8830053e0ba1ea480416f8d98d1b7a75cf224de8&') no-repeat center center fixed;
-      background-size: cover;
-      font-family: monospace;
-      color: white;
-      text-align: center;
-      padding-top: 100px;
-    }
+<meta charset="UTF-8">
+<title>Hacked By cAsH</title>
 
-    h1 {
-      color: black;
-      font-size: 2.5em;
-      text-shadow: 0 0 8px black
-      , 0 0 15px red;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+  font-family: monospace;
+  color:#fff;
+  text-align:center;
+  min-height:100vh;
+  padding-top:60px;
+}
+.overlay{
+  position:fixed;
+  inset:0;
+  background:url("https://cdn.discordapp.com/attachments/1380309637961875517/1410046982935941150/v10044g50000c5c74tjc77u3u3n8uqkg1.gif?ex=695117d6&is=694fc656&hm=595267d1b516348a07ed9e2554651d22ed436e0b70c22b5b00c29efb3d88fb42&?size=1024&animated=true")
+  center/cover no-repeat;
+  filter: blur(6px) brightness(0.6);
+  z-index:-1;
+}
+.top-img img{width:140px}
 
-    .info {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #240000;
-      text-shadow: 0 0 8px #240000, 0 0 15px #240000;
-      white-space: pre-wrap;
-    }
+/* Black / Red / White */
+@keyframes rgb3 {
+  0%{color:#000}
+  33%{color:#ff0000}
+  66%{color:#ffffff}
+  100%{color:#000}
+}
 
-    .warning {
-      color: red;
-      margin-top: 30px;
-      font-size: 1.8em;
-      text-shadow: 0 0 5px red;
-    }
+/* JHNM White / Red only */
+@keyframes jhnm {
+  0%{color:#ffffff}
+  50%{color:#ff0000}
+  100%{color:#ffffff}
+}
 
-    img {
-      width: 150px;
-    }
-  </style>
+.hacked{
+  margin-top:20px;
+  font-size:36px;
+  text-shadow:0 0 10px #000,0 0 15px #ff0000;
+  animation: rgb3 2.5s infinite;
+}
+.hacked .name{
+  animation: jhnm 1.2s infinite;
+}
+
+.discord{margin-top:10px;font-size:18px}
+.discord a{color:#ff6a00;text-decoration:none}
+
+.msg{
+  margin-top:8px;
+  font-size:18px;
+  animation: rgb3 2.5s infinite;
+}
+
+.ip{margin-top:20px;font-size:16px}
+.ipinfo-title{margin-top:6px;font-size:15px;color:#fff}
+.info{margin-top:10px;font-size:14px;line-height:1.5;color:#ff6a00}
+.down{margin-top:25px;font-size:22px;color:red;text-shadow:0 0 10px red}
+.bottom-img{margin-top:20px}
+.bottom-img img{width:160px}
+</style>
 </head>
+
 <body>
 
-  <img src="https://cdn.discordapp.com/emojis/1291869918794616902.webp?size=80" alt="Hacker Image"> <!-- عدّل الصورة حسب ما بدك -->
-  <h1>Hacked By [ JHNM ]</h1>
-  <h1><b><p href="discord.gg/Ay1" style="color: orange; text-decoration: none;">Discord.gg/ayl</h1><h1></h1>
-  <h1 style="color: red;">JHNM fucked the server </h1>
+<div class="overlay"></div>
 
-  <div class="info" id="ip-info">Loading IP info...</div>
-
-  <div class="warning">Oops, server is down !</div>
-
+<div class="top-img">
+  <img src="https://cdn.discordapp.com/emojis/1291869918794616902.webp?size=80">
 </div>
-    <audio autoplay loop>
-        <source src="https://cdn.discordapp.com/attachments/1380309637961875517/1414935644848783402/Oppenheimer_2023_Soundtrack_-_Can_You_Hear_The_Music_Extended.mp3?ex=6943e581&is=69429401&hm=e5e4d9991defd73296e3d76eae0aefe9c588b4fb1a906714a8ef59c0bf5cde9c&" type="audio/mpeg">
-        Your browser does not support the audio element.
 
-    }
-    </style>
-</head>
-<body>
-    <div class="image-container">
-        <img src="https://l.top4top.io/p_32131zd9t1.png" alt="Discord Image">
-    </div>
-    <audio autoplay loop>
-        <source src="https://cdn.discordapp.com/attachments/1380309637961875517/1414935644848783402/Oppenheimer_2023_Soundtrack_-_Can_You_Hear_The_Music_Extended.mp3?ex=6943e581&is=69429401&hm=e5e4d9991defd73296e3d76eae0aefe9c588b4fb1a906714a8ef59c0bf5cde9c&" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="info" id="ip-info">
-        <strong>IP: <span id="ip"></span></strong><br>
-        <span><strong>City:</strong> <span id="city"></span></span><br>
-        <span><strong>Region:</strong> <span id="region"></span></span><br>
-        <span><strong>Country:</strong> <span id="country"></span></span><br>
-        <span><strong>Location:</strong> <span id="loc"></span></span><br>
-        <span><strong>Organization:</strong> <span id="org"></span></span><br>
-        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
-    </div>
-    <div class="text">discord.gg/ay1</div>
+<div class="hacked">Hacked By [ <span class="name">JHNM</span> ]</div>
 
-    <script>
-         fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = JSON.stringify(data, null, 2);
-        });
-    </script>
+<div class="discord">
+  <a href="https://discord.gg/ay1">Discord.gg/ay1</a>
+</div>
+
+<div class="msg">JHNM. fucked the server</div>
+
+<div class="ip">
+  Your IP Address: <span id="ip">Loading...</span>
+</div>
+
+<div class="ipinfo-title">Your IP Info</div>
+
+<div class="info">
+  City: <span id="city"></span><br>
+  Region: <span id="region"></span><br>
+  Country: <span id="country"></span><br>
+  Location: <span id="loc"></span><br>
+  Org: <span id="org"></span><br>
+  Timezone: <span id="timezone"></span>
+</div>
+
+<div class="down">Oops, your server is down!</div>
+<audio autoplay loop>
+  <source src="https://cdn.discordapp.com/attachments/1379284007858212874/1410164170942578810/v10044g50000c5c74tjc77u3u3n8uqkg1.mp3?ex=695184f9&is=69503379&hm=cc37e5cfd7814be4c27ba5d04624ca0743a140f3cb297d059ef75a5628ea1a7d&" type="audio/mpeg">
+</audio>
+
+<script>
+fetch("https://ipinfo.io/json")
+.then(r=>r.json())
+.then(d=>{
+  ip.textContent=d.ip;
+  city.textContent=d.city;
+  region.textContent=d.region;
+  country.textContent=d.country;
+  loc.textContent=d.loc;
+  org.textContent=d.org;
+  timezone.textContent=d.timezone;
+});
+</script>
 </body>
 </html>
 <script>
